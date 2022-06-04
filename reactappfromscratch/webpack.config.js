@@ -29,15 +29,10 @@ module.exports = {
     filename: "bundle.js",
   },
   devServer: {
-    //"contentBase" keyword for older webpack versios and "static" for newer versions
-    static: path.join(__dirname, "public/"),
+    contentBase: path.join(__dirname, "public/"),
     port: 3000,
-    //"publicPath" keyword for older webpack versions and "devMiddleware" for newer versions
-    devMiddleware: {
-      publicPath: "http://localhost:3000/dist/",
-    },
-    //"hotOnly: true" keyword for older webpack versions and "hot" for newer versions
-    hot: "only",
+    publicPath: "http://localhost:3000/dist/",
+    hotOnly: true,
   },
   // When you have hot: true in the current versions, the HotModuleReplacementPlugin
   // plugin is automatically applied, thus make sure you don't have HotModuleReplacementPlugin in your plugins if you have hot: true/hot: "only."
