@@ -8,7 +8,7 @@ class App extends Component {
       <div className="App">
         <h1>
           Hello, World. This is react project which has been setup from scratch.
-          And not using create-react-app command.
+          And not using create-react-app command ddd.
         </h1>
       </div>
     );
