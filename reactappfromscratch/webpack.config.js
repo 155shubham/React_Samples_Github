@@ -32,9 +32,7 @@ module.exports = {
     contentBase: path.join(__dirname, "public/"),
     port: 3000,
     publicPath: "http://localhost:3000/dist/",
-    hotOnly: true,
+    hot: true,
   },
-  // When you have hot: true in the current versions, the HotModuleReplacementPlugin
-  // plugin is automatically applied, thus make sure you don't have HotModuleReplacementPlugin in your plugins if you have hot: true/hot: "only."
-  // plugins: [new webpack.HotModuleReplacementPlugin()],
+  plugins: [new webpack.HotModuleReplacementPlugin()],
 };
